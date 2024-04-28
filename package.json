@@ -3,14 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "api-test": "npx playwright test api_order.spec.ts",
-    "test:parallel":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts",
-    "test:parallel-headed":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts --headed",
-    "test:chromium":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts --project=chromium --headed",
-    "test:firefox":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts --project=firefox --headed",
-    "test:webkit":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts --project=webkit --headed",
-    "test:mobile-safari":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts --project=MobileSafari --headed",
-    "test:mobile-chrome":"cross-env test_env=uiTest npx playwright test ui_order.spec.ts --project=MobileChrome --headed"
+    "parallel-test": "npx playwright test register.test.spec.ts",
+    "test:chromium":"npx playwright test register.test.spec.ts --project=chromium --headed"
   },
   "keywords": [],
   "author": "",
